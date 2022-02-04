@@ -10,7 +10,7 @@ const Home = () => {
         <Title>michael desanker</Title>
         <Text>
           I am a self-taught software engineer with a background in chemistry.
-          Learn more <StyledLink to="#">about</StyledLink> me.
+          Learn more <StyledLink to="/about">about</StyledLink> me.
         </Text>
         <Text>
           Here you can see some of my latest{" "}

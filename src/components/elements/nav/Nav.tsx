@@ -9,7 +9,7 @@ const Nav = () => {
         <Logo to="/">michaeldesanker</Logo>
         <NavList>
           <NavItem>
-            <StyledLink to="#">_ about</StyledLink>
+            <StyledLink to="/about">_ about</StyledLink>
           </NavItem>
           <NavItem>
             <StyledLink to="#">_ projects</StyledLink>
