@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Background from "../../../assets/images/home-background.jpg";
+import HomeIcons from "./HomeIcons";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
           For questions or hellos, feel free to{" "}
           <StyledLink to="#">contact me.</StyledLink>
         </Text>
+        <HomeIcons />
       </Card>
     </Wrapper>
   );
@@ -36,6 +38,7 @@ const Wrapper = styled.main`
 `;
 
 const Card = styled.div`
+  position: relative;
   width: 80%;
   max-width: 1000px;
   background-color: #0a9396;
