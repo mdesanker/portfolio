@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
@@ -5,7 +6,7 @@ const Nav = () => {
   return (
     <Wrapper>
       <Container>
-        <h1>michaeldesanker</h1>
+        <Logo to="/">michaeldesanker</Logo>
         <NavList>
           <NavItem>
             <StyledLink to="#">_ about</StyledLink>
@@ -37,14 +38,23 @@ const Container = styled.div`
   padding: 1rem;
 `;
 
+const Logo = styled(Link)`
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+`;
+
 const NavList = styled.ul``;
 
 const NavItem = styled.li`
   list-style: none;
-  padding: 5px 0;
 `;
 
 const StyledLink = styled(NavLink)`
+  width: 100%;
+  display: block;
+  padding: 10px 0;
   text-decoration: none;
   color: black;
   font-size: 1rem;
