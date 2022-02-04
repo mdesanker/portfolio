@@ -1,14 +1,14 @@
 import React, { Fragment } from "react";
 import GlobalStyles from "./theme/GlobalStyles";
 import { Routes, Route } from "react-router-dom";
+import Home from "./components/views/home/Home";
 
 function App() {
   return (
     <Fragment>
       <GlobalStyles />
-      <h1>Hello, world!</h1>
       <Routes>
-        <Route path="/" element={<div />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </Fragment>
   );
