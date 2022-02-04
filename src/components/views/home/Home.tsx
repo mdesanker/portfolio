@@ -37,29 +37,38 @@ const Wrapper = styled.main`
 
 const Card = styled.div`
   width: 80%;
-  max-width: 900px;
-  height: 80vh;
+  max-width: 1000px;
   background-color: #0a9396;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 700px) {
     width: 100%;
+    padding: 1rem;
   }
 `;
 
 const Title = styled.h1`
+  font-size: 3rem;
   letter-spacing: 0.2rem;
   margin-bottom: 1rem;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 2rem;
+  }
 `;
 
 const Text = styled.p`
+  font-size: 2rem;
   width: 100%;
-  font-weight: bold;
   letter-spacing: 0.1rem;
-  padding-top: 1rem;
+  padding-bottom: 2rem;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const StyledLink = styled(Link)`
