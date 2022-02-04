@@ -1,10 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
+import GlobalStyles from "./theme/GlobalStyles";
 
 function App() {
   return (
-    <div>
-      <h1>Hello, world!</h1>
-    </div>
+    <Fragment>
+      <GlobalStyles />
+      <h1>Michael Desanker</h1>
+    </Fragment>
   );
 }
 
