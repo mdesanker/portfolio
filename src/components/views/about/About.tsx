@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import styled from "styled-components";
 import Nav from "../../elements/nav/Nav";
+import Backend from "./Backend";
 import Frontend from "./Frontend";
 
 const About = () => {
@@ -31,6 +32,7 @@ const About = () => {
           </SkillSection>
           <SkillSection>
             <SkillHeader>Backend</SkillHeader>
+            <Backend />
           </SkillSection>
           <SkillSection>
             <SkillHeader>Tools</SkillHeader>
@@ -72,7 +74,5 @@ const SkillSection = styled.div`
 const SkillHeader = styled.p`
   font-weight: bold;
 `;
-
-const SkillIcons = styled.div``;
 
 export default About;
