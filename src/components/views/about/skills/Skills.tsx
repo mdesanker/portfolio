@@ -34,7 +34,7 @@ const SkillSection = styled.div`
 const SkillHeader = styled.p`
   font-weight: bold;
   font-size: 1.2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 `;
 
 export default Skills;
