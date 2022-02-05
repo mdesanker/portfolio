@@ -4,27 +4,26 @@ import styled from "styled-components";
 
 const Nav = () => {
   return (
-    <Wrapper>
-      {/* <Container> */}
-      {/* <Logo to="/">michaeldesanker</Logo>
-        <LogoSmall to="/">md</LogoSmall> */}
-      <NavList>
-        <NavItem>
-          <StyledLink to="/about">_ about</StyledLink>
-        </NavItem>
-        <NavItem>
-          <StyledLink to="#">_ projects</StyledLink>
-        </NavItem>
-        <NavItem>
-          <StyledLink to="#">_ contact</StyledLink>
-        </NavItem>
-      </NavList>
-      {/* </Container> */}
-    </Wrapper>
+    <nav>
+      <Logo to="/">michaeldesanker</Logo>
+      <Container>
+        <NavList>
+          <NavItem>
+            <StyledLink to="/about">_ about</StyledLink>
+          </NavItem>
+          <NavItem>
+            <StyledLink to="#">_ projects</StyledLink>
+          </NavItem>
+          <NavItem>
+            <StyledLink to="#">_ contact</StyledLink>
+          </NavItem>
+        </NavList>
+      </Container>
+    </nav>
   );
 };
 
-const Wrapper = styled.nav`
+const Container = styled.div`
   position: fixed;
   width: 100vh;
   height: 60px;
@@ -38,38 +37,18 @@ const Wrapper = styled.nav`
   justify-content: center;
 `;
 
-const Container = styled.div`
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-`;
-
 const Logo = styled(Link)`
+  position: fixed;
   text-decoration: none;
   color: black;
   font-size: 2rem;
   font-weight: bold;
-
-  @media only screen and (max-width: 550px) {
-    display: none;
-  }
-`;
-
-const LogoSmall = styled(Logo)`
-  display: none;
-
-  @media only screen and (max-width: 550px) {
-    display: block;
-  }
+  padding: 10px;
 `;
 
 const NavList = styled.ul`
   display: flex;
   position: fixed;
-  // transform: rotate(-90deg) translate(-50%, -50%);
   gap: 20px;
 `;
 
