@@ -5,28 +5,37 @@ import styled from "styled-components";
 const Nav = () => {
   return (
     <Wrapper>
-      <Container>
-        <Logo to="/">michaeldesanker</Logo>
-        <LogoSmall to="/">md</LogoSmall>
-        <NavList>
-          <NavItem>
-            <StyledLink to="/about">_ about</StyledLink>
-          </NavItem>
-          <NavItem>
-            <StyledLink to="#">_ projects</StyledLink>
-          </NavItem>
-          <NavItem>
-            <StyledLink to="#">_ contact</StyledLink>
-          </NavItem>
-        </NavList>
-      </Container>
+      {/* <Container> */}
+      {/* <Logo to="/">michaeldesanker</Logo>
+        <LogoSmall to="/">md</LogoSmall> */}
+      <NavList>
+        <NavItem>
+          <StyledLink to="/about">_ about</StyledLink>
+        </NavItem>
+        <NavItem>
+          <StyledLink to="#">_ projects</StyledLink>
+        </NavItem>
+        <NavItem>
+          <StyledLink to="#">_ contact</StyledLink>
+        </NavItem>
+      </NavList>
+      {/* </Container> */}
     </Wrapper>
   );
 };
 
 const Wrapper = styled.nav`
   position: fixed;
-  width: 100%;
+  width: 100vh;
+  height: 60px;
+  top: 0;
+  left: -100vh;
+  transform: rotate(-90deg);
+  transform-origin: top right;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Container = styled.div`
@@ -57,7 +66,12 @@ const LogoSmall = styled(Logo)`
   }
 `;
 
-const NavList = styled.ul``;
+const NavList = styled.ul`
+  display: flex;
+  position: fixed;
+  // transform: rotate(-90deg) translate(-50%, -50%);
+  gap: 20px;
+`;
 
 const NavItem = styled.li`
   list-style: none;
