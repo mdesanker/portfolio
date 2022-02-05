@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import styled from "styled-components";
 import Nav from "../../elements/nav/Nav";
-import FrontendSVGs from "./FrontendSVGs";
+import Frontend from "./Frontend";
 
 const About = () => {
   return (
@@ -27,7 +27,13 @@ const About = () => {
           <Title>Skills</Title>
           <SkillSection>
             <SkillHeader>Frontend</SkillHeader>
-            <FrontendSVGs />
+            <Frontend />
+          </SkillSection>
+          <SkillSection>
+            <SkillHeader>Backend</SkillHeader>
+          </SkillSection>
+          <SkillSection>
+            <SkillHeader>Tools</SkillHeader>
           </SkillSection>
         </Section>
       </Wrapper>

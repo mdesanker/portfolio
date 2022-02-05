@@ -8,7 +8,7 @@ interface Props {
 const Icon = ({ children, label }: Props) => {
   return (
     <Wrapper>
-      <Logo>{children}</Logo>
+      {children}
       <Label>{label}</Label>
     </Wrapper>
   );
@@ -17,14 +17,6 @@ const Icon = ({ children, label }: Props) => {
 const Wrapper = styled.li`
   display: flex;
   flex-direction: column;
-  align-items: center;
-`;
-
-const Logo = styled.div`
-  height: 48px;
-  width: 48px;
-  display: flex;
-  justify-content: center;
   align-items: center;
 `;
 
