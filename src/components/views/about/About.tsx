@@ -1,10 +1,8 @@
 import { Fragment } from "react";
 import styled from "styled-components";
 import Nav from "../../elements/nav/Nav";
-import Backend from "./Backend";
 import Background from "./background/Background";
-import Frontend from "./Frontend";
-import Tools from "./Tools";
+import Skills from "./skills/Skills";
 
 const About = () => {
   return (
@@ -12,21 +10,7 @@ const About = () => {
       <Nav />
       <Wrapper>
         <Background />
-        <Section>
-          <Title>Skills</Title>
-          <SkillSection>
-            <SkillHeader>Frontend</SkillHeader>
-            <Frontend />
-          </SkillSection>
-          <SkillSection>
-            <SkillHeader>Backend</SkillHeader>
-            <Backend />
-          </SkillSection>
-          <SkillSection>
-            <SkillHeader>Tools</SkillHeader>
-            <Tools />
-          </SkillSection>
-        </Section>
+        <Skills />
       </Wrapper>
     </Fragment>
   );
