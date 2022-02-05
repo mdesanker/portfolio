@@ -5,7 +5,9 @@ import styled from "styled-components";
 const Nav = () => {
   return (
     <nav>
-      <Logo to="/">michaeldesanker</Logo>
+      <LogoBackground>
+        <Logo to="/">michaeldesanker</Logo>
+      </LogoBackground>
       <Container>
         <NavList>
           <NavItem>
@@ -26,19 +28,25 @@ const Nav = () => {
 const Container = styled.div`
   position: fixed;
   width: 100vh;
-  height: 60px;
+  height: 45px;
   top: 0;
   left: -100vh;
   transform: rotate(-90deg);
   transform-origin: top right;
+  padding-right: 100px;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+`;
+
+const LogoBackground = styled.div`
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
 `;
 
 const Logo = styled(Link)`
-  position: fixed;
   text-decoration: none;
   color: black;
   font-size: 2rem;
@@ -49,7 +57,7 @@ const Logo = styled(Link)`
 const NavList = styled.ul`
   display: flex;
   position: fixed;
-  gap: 20px;
+  gap: 30px;
 `;
 
 const NavItem = styled.li`
@@ -59,6 +67,7 @@ const NavItem = styled.li`
 const StyledLink = styled(NavLink)`
   width: 100%;
   display: block;
+  height: 45px;
   padding: 10px 0;
   text-decoration: none;
   color: black;
