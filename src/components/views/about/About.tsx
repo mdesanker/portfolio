@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Nav from "../../elements/nav/Nav";
 import Backend from "./Backend";
 import Frontend from "./Frontend";
+import Tools from "./Tools";
 
 const About = () => {
   return (
@@ -36,6 +37,7 @@ const About = () => {
           </SkillSection>
           <SkillSection>
             <SkillHeader>Tools</SkillHeader>
+            <Tools />
           </SkillSection>
         </Section>
       </Wrapper>
