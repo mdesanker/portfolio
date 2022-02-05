@@ -26,7 +26,6 @@ const Nav = () => {
 const Wrapper = styled.nav`
   position: fixed;
   width: 100%;
-  height: 100vh;
 `;
 
 const Container = styled.div`
