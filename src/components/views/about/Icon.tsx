@@ -18,6 +18,12 @@ const Wrapper = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90px;
+  transition: transform 200ms;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 const Label = styled.p`

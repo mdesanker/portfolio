@@ -23,12 +23,12 @@ const Backend = () => {
 const SkillGroup = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 `;
 
 const Row = styled.ul`
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1.5rem;
 `;
 
 const Nodedotjs = styled(SiNodedotjs)`

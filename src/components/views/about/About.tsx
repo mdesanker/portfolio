@@ -71,10 +71,12 @@ const Text = styled.p`
 const SkillSection = styled.div`
   display: flex;
   flex-direction: column;
+  padding-bottom: 1rem;
 `;
 
 const SkillHeader = styled.p`
   font-weight: bold;
+  padding-bottom: 1rem;
 `;
 
 export default About;
