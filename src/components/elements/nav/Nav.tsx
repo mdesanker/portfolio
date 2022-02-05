@@ -7,6 +7,7 @@ const Nav = () => {
     <Wrapper>
       <Container>
         <Logo to="/">michaeldesanker</Logo>
+        <LogoSmall to="/">md</LogoSmall>
         <NavList>
           <NavItem>
             <StyledLink to="/about">_ about</StyledLink>
@@ -42,6 +43,18 @@ const Logo = styled(Link)`
   color: black;
   font-size: 2rem;
   font-weight: bold;
+
+  @media only screen and (max-width: 550px) {
+    display: none;
+  }
+`;
+
+const LogoSmall = styled(Logo)`
+  display: none;
+
+  @media only screen and (max-width: 550px) {
+    display: block;
+  }
 `;
 
 const NavList = styled.ul``;
