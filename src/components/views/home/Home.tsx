@@ -20,7 +20,7 @@ const Home = () => {
           For questions or hellos, feel free to{" "}
           <StyledLink to="/contact">contact me.</StyledLink>
         </Text>
-        <HomeIcons />
+        {/* <HomeIcons /> */}
       </Card>
     </Wrapper>
   );

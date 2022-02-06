@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import styled from "styled-components";
 import Nav from "../../elements/nav/Nav";
 import Wrapper from "../../elements/Wrapper";
 import Section from "../../elements/Section";
