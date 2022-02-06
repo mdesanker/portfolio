@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import ProjectLink from "./ProjectLink";
 import StackIcon from "./StackIcon";
 
 const ProjectCard = () => {
   return (
     <Card>
+      <ProjectLink live="#" github="#" />
       <Img />
       <Title>Errand Tracker</Title>
       <StackContainer>
