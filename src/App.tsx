@@ -3,7 +3,7 @@ import GlobalStyles from "./theme/GlobalStyles";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/views/home/Home";
 import About from "./components/views/about/About";
-import Nav from "./components/elements/nav/Nav";
+import Contact from "./components/views/contact/Contact";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/nav" element={<Nav />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Fragment>
   );

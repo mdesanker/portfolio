@@ -13,10 +13,10 @@ const VerticalNav = () => {
             <StyledLink to="/about">_ about</StyledLink>
           </NavItem>
           <NavItem>
-            <StyledLink to="#">_ projects</StyledLink>
+            <StyledLink to="/projects">_ projects</StyledLink>
           </NavItem>
           <NavItem>
-            <StyledLink to="#">_ contact</StyledLink>
+            <StyledLink to="/contact">_ contact</StyledLink>
           </NavItem>
         </NavList>
       </Container>

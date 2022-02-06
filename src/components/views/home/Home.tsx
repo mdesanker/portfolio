@@ -14,11 +14,11 @@ const Home = () => {
         </Text>
         <Text>
           Here you can see some of my latest{" "}
-          <StyledLink to="#">projects.</StyledLink>
+          <StyledLink to="/projects">projects.</StyledLink>
         </Text>
         <Text>
           For questions or hellos, feel free to{" "}
-          <StyledLink to="#">contact me.</StyledLink>
+          <StyledLink to="/contact">contact me.</StyledLink>
         </Text>
         <HomeIcons />
       </Card>
