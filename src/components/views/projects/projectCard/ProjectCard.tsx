@@ -1,11 +1,18 @@
 import styled from "styled-components";
+import StackIcon from "./StackIcon";
 
 const ProjectCard = () => {
   return (
     <Card>
       <Img />
       <Title>Errand Tracker</Title>
-      <div>Stack</div>
+      <StackContainer>
+        <StackIcon text="React" />
+        <StackIcon text="Redux" />
+        <StackIcon text="Node" />
+        <StackIcon text="Express" />
+        <StackIcon text="MongoDB" />
+      </StackContainer>
       <Description>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sint
         blanditiis facere vitae quo aliquam quibusdam veritatis sunt magnam.
@@ -21,7 +28,9 @@ const Card = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
+  padding-bottom: 1rem;
+  border-bottom: thin solid #999;
+  margin: 0 auto 3rem;
 
   @media only screen and (min-width: 700px) {
     width: 70%;
@@ -37,8 +46,17 @@ const Img = styled.div`
 
 const Title = styled.h2``;
 
+const StackContainer = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 8px 0;
+`;
+
 const Description = styled.p`
   text-align: justify;
+  line-height: 1.5;
 `;
 
 export default ProjectCard;

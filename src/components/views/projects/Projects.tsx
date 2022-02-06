@@ -4,7 +4,7 @@ import Nav from "../../elements/nav/Nav";
 import Wrapper from "../../elements/Wrapper";
 import Section from "../../elements/Section";
 import SectionHeader from "../../elements/SectionHeader";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./projectCard/ProjectCard";
 
 const Projects = () => {
   return (
@@ -13,6 +13,7 @@ const Projects = () => {
       <Wrapper>
         <Section>
           <SectionHeader>Projects</SectionHeader>
+          <ProjectCard />
           <ProjectCard />
         </Section>
       </Wrapper>
