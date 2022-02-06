@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Fragment } from "react";
 import Nav from "../../elements/nav/Nav";
+import Wrapper from "../../elements/Wrapper";
 
 const Contact = () => {
   return (
@@ -12,12 +13,5 @@ const Contact = () => {
     </Fragment>
   );
 };
-
-const Wrapper = styled.main`
-  padding-top: 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
 
 export default Contact;
