@@ -19,7 +19,7 @@ const Wrapper = styled.li`
   flex-direction: column;
   align-items: center;
   width: 90px;
-  transition: transform 200ms;
+  transition: transform 200ms ease;
 
   &:hover {
     transform: scale(1.1);
