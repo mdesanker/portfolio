@@ -8,10 +8,10 @@ interface Props {
 const ProjectLink = ({ github, live }: Props) => {
   return (
     <LinkWrapper>
-      <Container href={live}>
+      <Container href={live} target="_blank" rel="noopener noreferrer">
         <i className="fas fa-external-link-alt" />
       </Container>
-      <Container href={github}>
+      <Container href={github} target="_blank" rel="noopener noreferrer">
         <i className="fab fa-github" />
       </Container>
     </LinkWrapper>
