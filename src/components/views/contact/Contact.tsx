@@ -14,6 +14,15 @@ const Contact = () => {
     setEmail("// mdesanker@gmail.com");
   };
 
+  const mouseDownHandler = () => {
+    navigator.clipboard.writeText("mdesanker@gmail.com");
+    setEmail("Email copied");
+  };
+
+  const mouseUpHandler = () => {
+    setEmail("Copy to clipboard");
+  };
+
   return (
     <Fragment>
       <Nav />
@@ -21,7 +30,14 @@ const Contact = () => {
         <h1>Contact</h1>
 
         <LinkContainer>
-          <Email onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>
+          <Email
+            onMouseOver={mouseOverHandler}
+            onMouseOut={mouseOutHandler}
+            onMouseDown={mouseDownHandler}
+            onMouseUp={mouseUpHandler}
+            onTouchStart={mouseDownHandler}
+            onTouchEnd={mouseUpHandler}
+          >
             {email}
           </Email>
           <StyledLink
@@ -55,7 +71,8 @@ const LinkContainer = styled.div`
 const Email = styled.p`
   font-size: 1.5rem;
   cursor: pointer;
-  // transition: color 100ms ease;
+  width: 350px;
+  text-align: center;
 
   &:hover {
     color: gray;
@@ -66,7 +83,6 @@ const StyledLink = styled.a`
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  // transition: color 100ms ease;
 
   &:hover {
     color: gray;
