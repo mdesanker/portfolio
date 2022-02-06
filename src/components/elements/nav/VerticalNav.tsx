@@ -24,7 +24,7 @@ const VerticalNav = () => {
   );
 };
 
-const NavWrapper = styled.nav`
+const NavWrapper = styled.div`
   width: 100%;
   position: fixed;
 
@@ -55,6 +55,7 @@ const LogoBackground = styled.div`
   align-items: center;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
 `;
 
 const Logo = styled(NavLink)`

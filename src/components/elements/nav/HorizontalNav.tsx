@@ -30,6 +30,7 @@ const NavWrapper = styled.div`
   left: 50%;
   transform: translateX(-50%);
   display: none;
+  background-color: rgba(255, 255, 255, 0.9);
 
   @media only screen and (min-width: 1000px) {
     display: flex;

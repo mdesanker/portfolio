@@ -1,13 +1,12 @@
-import { Fragment } from "react";
 import HorizontalNav from "./HorizontalNav";
 import VerticalNav from "./VerticalNav";
 
 const Nav = () => {
   return (
-    <Fragment>
+    <nav>
       <VerticalNav />
       <HorizontalNav />
-    </Fragment>
+    </nav>
   );
 };
 
