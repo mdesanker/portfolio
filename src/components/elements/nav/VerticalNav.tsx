@@ -84,7 +84,6 @@ const StyledLink = styled(NavLink)`
   text-decoration: none;
   color: black;
   font-size: 1rem;
-  transition: color 200ms;
   text-transform: uppercase;
 
   &:hover {
