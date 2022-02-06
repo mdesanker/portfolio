@@ -5,9 +5,11 @@ import StackIcon from "./StackIcon";
 const ProjectCard = () => {
   return (
     <Card>
-      <ProjectLink live="#" github="#" />
       <Img />
-      <Title>Errand Tracker</Title>
+      <TitleContainer>
+        <Title>Errand Tracker</Title>
+        <ProjectLink live="#" github="#" />
+      </TitleContainer>
       <StackContainer>
         <StackIcon text="React" />
         <StackIcon text="Redux" />
@@ -44,6 +46,15 @@ const Img = styled.div`
   height: 250px;
   background-color: lightgray;
   margin-bottom: 1rem;
+`;
+
+const TitleContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Title = styled.h2``;

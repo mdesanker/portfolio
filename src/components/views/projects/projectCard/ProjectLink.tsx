@@ -20,10 +20,12 @@ const ProjectLink = ({ github, live }: Props) => {
 
 const LinkWrapper = styled.div`
   position: absolute;
+  right: 0;
+  transform: translateX(100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 `;
 
 const Container = styled.a`
