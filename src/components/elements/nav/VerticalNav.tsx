@@ -27,6 +27,7 @@ const VerticalNav = () => {
 const NavWrapper = styled.div`
   width: 100%;
   position: fixed;
+  z-index: 10;
 
   @media only screen and (min-width: 1000px) {
     display: none;
