@@ -41,7 +41,7 @@ const Card = styled.div`
   position: relative;
   width: 80%;
   max-width: 1000px;
-  background-color: #0a9396;
+  background-color: ${({ theme }) => theme.colors.primary};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,7 +79,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  color: #b5ebe4;
+  color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export default Home;
