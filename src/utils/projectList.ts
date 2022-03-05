@@ -19,7 +19,7 @@ export const projectList: IProject[] = [
     image: "budget_app.png",
     tools: ["TypeScript", "React", "Redux", "NodeJS", "Express", "MongoDB"],
     description:
-      "This app allows users to track expenses and earnings, and view spending trends in week, year, and category charts.",
+      "Users can track expenses with amount, who money was sent to or received from, a description of what the transaction was for, a transaction category, and date of the transaction. Spending habits can be tracked in graphs by week, year, and category.",
     links: {
       live: "https://mdesanker.github.io/budget-frontend/",
       github: "https://github.com/mdesanker/budget-frontend",
@@ -31,7 +31,7 @@ export const projectList: IProject[] = [
     image: "errand_app.png",
     tools: ["React", "Redux", "NodeJS", "Express", "MongoDB"],
     description:
-      "This errand tracking app allows users to create errands with titles, due dates, and priorities. Errand completion status is toggled by clicking the errand. Errands can be added to projects, which can be shared with and updated by friends.",
+      "Users can create errands with titles, due dates, and priority levels. Errands can be toggled complete by clicking/pressing. Projects can be created and shared with friends, allowing others to share errands with each other.",
     links: {
       live: "https://mdesanker.github.io/errand-tracker-frontend/",
       github: "https://github.com/mdesanker/errand-tracker-frontend",
