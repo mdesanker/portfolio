@@ -7,6 +7,7 @@ import {
   SiTypescript,
   SiReact,
   SiRedux,
+  SiTailwindcss,
 } from "react-icons/si";
 
 const Frontend = () => {
@@ -34,6 +35,11 @@ const Frontend = () => {
           <Redux />
         </Icon>
       </Row>
+      <LastRow>
+        <Icon label="Tailwind">
+          <Tailwind />
+        </Icon>
+      </LastRow>
     </SkillGroup>
   );
 };
@@ -47,6 +53,10 @@ const Row = styled.ul`
   display: flex;
   justify-content: space-between;
   padding-bottom: 1.5rem;
+`;
+
+const LastRow = styled(Row)`
+  justify-content: center;
 `;
 
 const Javascript = styled(SiJavascript)`
@@ -78,6 +88,11 @@ const React = styled(SiReact)`
 const Redux = styled(SiRedux)`
   font-size: 48px;
   color: rgb(126, 87, 194);
+`;
+
+const Tailwind = styled(SiTailwindcss)`
+  font-size: 48px;
+  color: #38bdf8;
 `;
 
 export default Frontend;
