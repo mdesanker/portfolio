@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Background from "../../../assets/images/home-background.jpg";
-import HomeIcons from "./HomeIcons";
 
 const Home = () => {
   return (
@@ -29,7 +28,8 @@ const Home = () => {
 const Wrapper = styled.main`
   width: 100%;
   min-height: 100vh;
-  background: url(${Background});
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(${Background});
   background-size: cover;
   background-position: center;
   display: flex;
