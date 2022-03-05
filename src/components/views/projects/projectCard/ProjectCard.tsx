@@ -2,27 +2,29 @@ import styled from "styled-components";
 import ProjectLink from "./ProjectLink";
 import StackIcon from "./StackIcon";
 
-const ProjectCard = () => {
+interface Props {
+  project: any;
+}
+
+const ProjectCard = ({ project }: Props) => {
+  console.log(project);
+  const { title, image, tools, description, links } = project;
+
+  const projectImage = require(`../../../../assets/images/${image}`);
+
   return (
     <Card>
-      <Img />
+      <Img src={projectImage} alt={title} />
       <TitleContainer>
-        <Title>Errand Tracker</Title>
-        <ProjectLink live="#" github="#" />
+        <Title>{title}</Title>
+        <ProjectLink live={links.live} github={links.github} />
       </TitleContainer>
       <StackContainer>
-        <StackIcon text="React" />
-        <StackIcon text="Redux" />
-        <StackIcon text="Node" />
-        <StackIcon text="Express" />
-        <StackIcon text="MongoDB" />
+        {tools.map((tool: string) => {
+          return <StackIcon text={tool} />;
+        })}
       </StackContainer>
-      <Description>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sint
-        blanditiis facere vitae quo aliquam quibusdam veritatis sunt magnam.
-        Quam soluta modi repellat itaque dolore harum incidunt sapiente ut
-        blanditiis?
-      </Description>
+      <Description>{description}</Description>
     </Card>
   );
 };
@@ -41,8 +43,8 @@ const Card = styled.div`
   }
 `;
 
-const Img = styled.div`
-  width: 100%;
+const Img = styled.img`
+  width: auto;
   height: 250px;
   background-color: lightgray;
   margin-bottom: 1rem;
