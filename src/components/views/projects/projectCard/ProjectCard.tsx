@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { IProject } from "../../../../utils/projectList";
 import ProjectLink from "./ProjectLink";
 import StackIcon from "./StackIcon";
+import { v4 as uuidv4 } from "uuid";
 
 interface Props {
   project: IProject;
@@ -21,7 +22,7 @@ const ProjectCard = ({ project }: Props) => {
       </TitleContainer>
       <StackContainer>
         {tools.map((tool: string) => {
-          return <StackIcon text={tool} />;
+          return <StackIcon key={uuidv4()} text={tool} />;
         })}
       </StackContainer>
       <Description>{description}</Description>

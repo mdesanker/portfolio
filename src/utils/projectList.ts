@@ -1,5 +1,7 @@
+import { v4 as uuidv4 } from "uuid";
+
 export interface IProject {
-  id: number;
+  id: string;
   title: string;
   image: string;
   tools: string[];
@@ -12,7 +14,7 @@ export interface IProject {
 
 export const projectList: IProject[] = [
   {
-    id: 1,
+    id: uuidv4(),
     title: "Budget App",
     image: "budget_app.png",
     tools: ["TypeScript", "React", "Redux", "NodeJS", "Express", "MongoDB"],
@@ -24,7 +26,7 @@ export const projectList: IProject[] = [
     },
   },
   {
-    id: 2,
+    id: uuidv4(),
     title: "Errand Tracker App",
     image: "errand_app.png",
     tools: ["React", "Redux", "NodeJS", "Express", "MongoDB"],
