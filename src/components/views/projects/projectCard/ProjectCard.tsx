@@ -1,13 +1,13 @@
 import styled from "styled-components";
+import { IProject } from "../../../../utils/projectList";
 import ProjectLink from "./ProjectLink";
 import StackIcon from "./StackIcon";
 
 interface Props {
-  project: any;
+  project: IProject;
 }
 
 const ProjectCard = ({ project }: Props) => {
-  console.log(project);
   const { title, image, tools, description, links } = project;
 
   const projectImage = require(`../../../../assets/images/${image}`);

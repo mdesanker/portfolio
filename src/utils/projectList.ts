@@ -1,4 +1,16 @@
-export const projectList = [
+export interface IProject {
+  id: number;
+  title: string;
+  image: string;
+  tools: string[];
+  description: string;
+  links: {
+    live: string;
+    github: string;
+  };
+}
+
+export const projectList: IProject[] = [
   {
     id: 1,
     title: "Budget App",
