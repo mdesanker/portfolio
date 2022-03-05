@@ -45,8 +45,9 @@ const Card = styled.div`
 `;
 
 const Img = styled.img`
-  width: auto;
-  height: 250px;
+  width: 90%;
+  border: 1px solid lightgray;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   background-color: lightgray;
   margin-bottom: 1rem;
 `;
