@@ -54,13 +54,14 @@ const Img = styled.img`
 const TitleContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
-const Title = styled.h2``;
+const Title = styled.h2`
+  text-align: center;
+`;
 
 const StackContainer = styled.ul`
   display: flex;
