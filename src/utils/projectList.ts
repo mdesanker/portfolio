@@ -27,6 +27,18 @@ export const projectList: IProject[] = [
   },
   {
     id: uuidv4(),
+    title: "Color Extractor App",
+    image: "color_extract_demo.gif",
+    tools: ["TypeScript", "React", "Redux", "React Palette", "React Dropzone"],
+    description:
+      "Users can drag-and-drop images onto upload area to extract prominent colors. Colors in the palette can then be clicked to easily copy hex codes to the clipboard.",
+    links: {
+      live: "https://mdesanker.github.io/color-extract/",
+      github: "https://github.com/mdesanker/color-extract",
+    },
+  },
+  {
+    id: uuidv4(),
     title: "Errand Tracker App",
     image: "errand_demo.gif",
     tools: ["React", "Redux", "NodeJS", "Express", "MongoDB"],
