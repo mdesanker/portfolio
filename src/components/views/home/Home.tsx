@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Background from "../../../assets/images/home-background.jpg";
 
 const Home = () => {
   return (
@@ -28,10 +27,7 @@ const Home = () => {
 const Wrapper = styled.main`
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(${Background});
-  background-size: cover;
-  background-position: center;
+  background-color: ${({ theme }) => theme.colors.primary};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +37,7 @@ const Card = styled.div`
   position: relative;
   width: 80%;
   max-width: 1000px;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,7 +52,7 @@ const Card = styled.div`
 const Title = styled.h1`
   font-size: 3rem;
   letter-spacing: 0.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   @media only screen and (max-width: 700px) {
     font-size: 2rem;
