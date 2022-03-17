@@ -23,7 +23,7 @@ const Background = () => {
 
 const P = styled.p`
   text-align: justify;
-  line-height: 1.8rem;
+  line-height: 1.3;
   padding-bottom: 1rem;
 `;
 

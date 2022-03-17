@@ -74,7 +74,7 @@ const StackContainer = styled.ul`
 
 const Description = styled.p`
   text-align: justify;
-  line-height: 1.5;
+  line-height: 1.3;
 `;
 
 export default ProjectCard;
